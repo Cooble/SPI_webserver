@@ -33,12 +33,15 @@ cmake -S . -B build && cmake --build build
 ### Spuštění
 Po úspěšném sestavení lze server spustit následujícím příkazem:
 ```bash
-./build/server
+./build/SPI_WEBSERVER
 ```
 
 Server bude naslouchat na portu 8080 a bude možné k němu přistupovat pomocí běžného webového prohlížeče na adrese:
 
 **Poznámka:** V prostředí GNS3 lze použít "proxy tunel" prostřednictvím služby https://localhost.run/.
+```bash
+./build/SPI_WEBSERVER & ssh -R 80:localhost:8080 nokey@localhost.run
+```
 
 ## Zdroje
 - [GNS3 emulátor projektu psi-example-project-1](https://home.zcu.cz/~maxmilio/PSI/psi-example-project-1.gns3project)
