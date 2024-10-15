@@ -14,7 +14,6 @@ Tento projekt implementuje TCP server, který zobrazuje směrovací tabulku host
   - **Gateway** – IP adresa směrovače (např. 172.20.1.254).
   - **Flags** – příznaky popisující stav směrovacího záznamu.
   - **Metric** – metrika směrování (celé číslo).
-  - **RefCnt**, **Use**, **MTU**, **Window**, **IRTT** – ostatní technické údaje o směrovací cestě.
 
 - Zobrazují se pouze "použitelné" záznamy, tj. ty, které mají příznak `RTF_UP`, což znamená, že jsou použitelné pro směrování.
 - IP adresa směrovače je zvýrazněna tučně, pokud je maska nulová.
