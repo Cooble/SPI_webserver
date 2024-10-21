@@ -10,8 +10,8 @@ Tento projekt implementuje TCP server, který zobrazuje směrovací tabulku host
 - Výstupem je HTML stránka se směrovací tabulkou obsahující následující sloupce:
   - **Interface** – identifikátor síťového rozhraní.
   - **Destination** – cílová IP adresa (např. 172.20.0.0).
-  - **Mask** – maska sítě (např. 255.255.0.0).
-  - **Gateway** – IP adresa směrovače (např. 172.20.1.254) (zvýrazněna tučně pokud maska=0).
+  - **Mask** – maska sítě ve formátu CIDR (např. 255.255.0.0).
+  - **Gateway** – IP adresa směrovače (např. 172.20.1.254).
   - **Flags** – příznaky popisující stav směrovacího záznamu.
   - **Metric** – metrika směrování (celé číslo).
 
